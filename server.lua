@@ -38,8 +38,8 @@ AddEventHandler("getParticlesData", function(keyword, scale)
     local particleTester = source
     -- Original Fx list: particlesFxDump.txt 
     -- Cherry-pick Fx list: cherry-pick.txt 
-    -- local path = "resources/[test]/particles/particlesFxDump.txt"
-    local path = "resources/[test]/particles/cherry-pick.txt"
+    local path = "resources/[test]/particles/particlesFxDump.txt"
+    -- local path = "resources/[test]/particles/cherry-pick.txt"
     dicts, particleNames = read_particles(path, keyword)
     TriggerClientEvent("receivedParticlesData", particleTester, dicts, particleNames, scale)
 end)
