@@ -20,7 +20,7 @@ start ParticleFxTester
 
 This resource adds a new chat command `/particles`, which loop through all the fx containing the `keyword` at certain `scale`
 ```
-/particles [keyword] [scale]
+/particles [scale] [keyword]
 ```
 After each fx is played in-game, a chat message will be added, indicating the fx number, fx name and method (either looped or non-looped)
 
@@ -28,7 +28,9 @@ After each fx is played in-game, a chat message will be added, indicating the fx
 
 ## Notice
 
-This is tested on a Linux server, if you have a Windows server you would probably need to change some parameters for the string parsing part to make it work. I'll be happy to merge it in.
+* Some particle effect requires certain parameters by [SetParticleFxLoopedEvolution()](https://runtime.fivem.net/doc/natives/#_0x5F0C4B5B1C393BE2)
+
+* This is tested on a Linux server, if you have a Windows server you would probably need to change some parameters for the string parsing part to make it work. I'll be happy to merge it in.
 
 ## Thanks
 
